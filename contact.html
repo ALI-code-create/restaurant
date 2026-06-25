@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – La Maison d'Or</title>
+  <meta name="description" content="Get in touch with La Maison d'Or. Find our address, hours, and send us a message.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">La<span>Maison</span></a>
+      <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding-top: 140px; padding-bottom: 0;">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Contact Us</h2>
+        <div class="divider"></div>
+        <p class="subtitle">We'd love to hear from you</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section>
+    <div class="container">
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Address</h4>
+              <p>123 Avenue des Gourmets<br>Casablanca 20250, Morocco</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+212 6 61 80 30 30</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>reservations@lamaison.ma</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <div class="hours-grid">
+                <span class="day">Mon–Thu</span>
+                <span class="time">6:00 PM – 11:00 PM</span>
+                <span class="day">Fri–Sat</span>
+                <span class="time">6:00 PM – 12:00 AM</span>
+                <span class="day">Sunday</span>
+                <span class="time">12:00 PM – 10:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" required placeholder="Your message…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">La<span>Maison</span></div>
+      <p>123 Avenue des Gourmets, Casablanca</p>
+      <p>+212 6 61 80 30 30</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 La Maison d'Or. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212661803030" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – La Maison d'Or</title>
+  <meta name="description" content="Browse our gallery and experience the ambiance, cuisine, and elegance of La Maison d'Or.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">La<span>Maison</span></a>
+      <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding-top: 140px; padding-bottom: 0;">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Gallery</h2>
+        <div class="divider"></div>
+        <p class="subtitle">A glimpse into the world of La Maison d'Or</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section>
+    <div class="container">
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/20184679/pexels-photo-20184679.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant restaurant interior" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/20184687/pexels-photo-20184687.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dining room with chandeliers" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/11906259/pexels-photo-11906259.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant table setting" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/33695620/pexels-photo-33695620.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ambient bar lighting" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/6289992/pexels-photo-6289992.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chef arranging a dish" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/9444053/pexels-photo-9444053.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pasta dish" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/10821331/pexels-photo-10821331.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lamb chops" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.pexels.com/photos/31609761/pexels-photo-31609761.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Salmon dish" loading="lazy" width="800" height="450" style="aspect-ratio:16/9;object-fit:cover;background-color:#6b2d3e">
+          <div class="overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Enlarged image">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">La<span>Maison</span></div>
+      <p>123 Avenue des Gourmets, Casablanca</p>
+      <p>+212 6 61 80 30 30</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 La Maison d'Or. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212661803030" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

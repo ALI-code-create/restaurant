@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation – La Maison d'Or</title>
+  <meta name="description" content="Reserve your table at La Maison d'Or for an unforgettable fine dining experience.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="logo">La<span>Maison</span></a>
+      <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reservation.html" class="active">Reservation</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section style="padding-top: 140px; padding-bottom: 0;">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Reserve a Table</h2>
+        <div class="divider"></div>
+        <p class="subtitle">Book your unforgettable evening with us</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Form -->
+  <section>
+    <div class="container">
+      <div class="reservation-form reveal">
+        <form id="reserveForm">
+          <div class="form-group">
+            <label for="resName">Full Name</label>
+            <input type="text" id="resName" name="name" required placeholder="Enter your full name">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="resTime">Time</label>
+              <input type="time" id="resTime" name="time" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests">Number of Guests</label>
+              <select id="resGuests" name="guests" required>
+                <option value="">Select</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resOccasion">Occasion</label>
+              <select id="resOccasion" name="occasion">
+                <option value="">Select (optional)</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="business">Business Dinner</option>
+                <option value="date">Date Night</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="resNotes">Special Requests</label>
+            <textarea id="resNotes" name="notes" placeholder="Allergies, dietary requirements, seating preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Confirm Reservation via WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid reveal" style="grid-template-columns: 1fr 1fr 1fr; text-align: center;">
+        <div>
+          <i class="fas fa-clock" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+          <h3 style="color: var(--gold); font-size: 1.3rem; margin-bottom: 8px;">Hours</h3>
+          <p style="color: var(--text-muted);">Mon–Thu: 6pm – 11pm</p>
+          <p style="color: var(--text-muted);">Fri–Sat: 6pm – 12am</p>
+          <p style="color: var(--text-muted);">Sun: 12pm – 10pm</p>
+        </div>
+        <div>
+          <i class="fas fa-phone" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+          <h3 style="color: var(--gold); font-size: 1.3rem; margin-bottom: 8px;">Phone</h3>
+          <p style="color: var(--text-muted);">+212 6 61 80 30 30</p>
+        </div>
+        <div>
+          <i class="fas fa-location-dot" style="font-size: 2rem; color: var(--gold); margin-bottom: 15px;"></i>
+          <h3 style="color: var(--gold); font-size: 1.3rem; margin-bottom: 8px;">Address</h3>
+          <p style="color: var(--text-muted);">123 Avenue des Gourmets</p>
+          <p style="color: var(--text-muted);">Casablanca, Morocco</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo">La<span>Maison</span></div>
+      <p>123 Avenue des Gourmets, Casablanca</p>
+      <p>+212 6 61 80 30 30</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 La Maison d'Or. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212661803030" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
